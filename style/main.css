@@ -92,6 +92,7 @@
    font:14px/35px "Microsoft YaHei","微软雅黑";
    color:#FFF;
    margin-right:59px;
+   display:inline;
 }
 
 .shopText{
@@ -163,12 +164,15 @@
    width:100%;
 }
 .shopClass_item{
-   padding:14px 10px;
+   padding:13px 10px;
    border-bottom:#3487F2 solid 1px;
    border-top:#5AA1FE solid 1px;
+   line-height:16px;
 }
 .shopClass_item dt{
-   height:22px;
+   height:20px;
+   line-height:1;
+   overflow:hidden;
    background:url(/home/willyon/ds/icon/yousan.png) right center no-repeat;
 }
 .shopClass_item .heborder{
@@ -271,6 +275,9 @@
    text-decoration:underline;
 }
 /*商品列表*/
+.shopList{
+   margin-bottom:15px;
+}
 .shopList .leftArea{
    width:186px;
 
@@ -285,7 +292,8 @@
 
 
 /*商品列表-右侧*/
-.shopList_top{
+.shopList_top,
+.shopList_sm{
    margin-right:-4px;
 }
 .shop_item{
@@ -312,4 +320,63 @@
    font-size:14px;
    color:#FF7300;
    line-height:21px;
+}
+/*商品列表-小*/
+.shopItem_sm{
+   width:203px;
+   height:116px;
+   border-right:1px solid #999;
+   /*border-bottom:1px solid #999;*/
+   /*text-align:center;*/
+   float:left;
+}
+.shopItem_smImg{
+   width:95px;
+   height:95px;
+   text-align:center;
+   float:left;
+}
+.shopItem_smImg img{
+   width:95px;
+   height:95px;
+}
+.shopItem_text{
+   padding-top:28px;
+   width:100px;
+   float:left;
+}
+.shopItem_text p{
+   color:#FF7300;
+   font-size:12px;
+}
+.shopItem_text h3{
+   font-family:"Microsoft YaHei","微软雅黑";
+   font-size:16px;
+   font-weight:normal;
+   color:#181818;
+   line-height:30px;
+}
+/*底部*/
+.footer{
+   text-align:center;
+   background-color:#D4D4D4;
+   line-height:24px;
+   padding:50px 0;
+   margin-top:40px;
+}
+.footer strong{
+   font-style:normal;
+   margin:0 5px;
+}
+.footer a{
+   color:#000;
+}
+.footer a:hover{
+   color:#F60;
+}
+.web{
+   padding-top:30px;
+}
+.web img{
+   margin:0 12px;
 }
