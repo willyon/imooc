@@ -1,0 +1,44 @@
+@charset "utf-8";
+/*css Document*/
+body,ul,ol,li,p,h1,h2,h3,h4,h5,h6,form,fieldset,table,td,img,div,dl,dt,dd,input{
+   margin:0;padding:0;
+}
+body{
+   font-size:12px;
+}
+img{
+   border:none;
+}
+li{
+   list-style:none;
+}
+input,select,textarea{
+   outline:none; /*围绕边框的外围线*/
+   border:none;
+   background:none;
+}
+textarea{
+   resize:none;/*该属性规定是否可由用户调整元素尺寸*/
+}
+a{
+   text-decoration:none;
+   color:#656565;
+}
+/*清除浮动*/
+.clearfix:after{  /*after为伪对象*/
+   content:"";
+   display:block;
+   clear:both;
+}
+.clearfix{
+   zoom:1;/*对象缩放属性,默认值为normal，用浮点数或百分比定义缩放比例，不允许负值*/
+}
+
+.fl{
+   float:left;
+}
+
+.fr{
+   float:right;
+}
+
