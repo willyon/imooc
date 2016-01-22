@@ -380,3 +380,316 @@
 .web img{
    margin:0 12px;
 }
+.hr_7{
+   height:7px;
+   overflow:hidden;
+}
+.hr_15{
+   height:15px;
+   overflow:hidden;
+}
+.hr_25{
+   height:25px;
+   overflow:hidden;
+}
+/*产品分类*/
+.products .leftArea{
+   width:185px;
+}
+.products .rightArea{
+   width:810px;
+}
+.products .banner_bar{
+   float:none;
+}
+.products .item{
+   width:25%;
+   *width:24.6%;/*for IE6,要带小数位*/
+   margin-bottom:10px;
+}
+/*产品分类导航*/
+.leftNav{
+   background-color:#F3F3F3;
+   border:#D7D7D7 solid 1px;
+}
+.nav_title{
+   height:34px;
+   line-height:34px;
+   font-size:14px;
+   border-bottom:#D7D7D7 solid 1px;
+   text-align:center;
+}
+.nav_cont{
+   padding:0 18px 4px;
+   border-bottom:#D7D7D7 1px dotted;
+   margin-bottom:-1px;
+}
+.nav_cont h3{
+   font-size:12px;
+   height:30px;
+   line-height:30px;
+}
+.navCont_list{
+   line-height:25px
+}
+.navCont_list li{
+   float:left;
+   width:50%;
+}
+.vertical li{
+   width:auto;
+   float:none;
+   padding-left:8px;
+}
+.vertical .nav_title,
+.vertical .nav_cont h3{
+   font-family:"Microsoft YaHei","微软雅黑";
+   font-size:14px;
+}
+/*标题*/
+.products_title{
+   height:34px;
+   border-bottom:#CCC solid 2px;
+}
+.products_title h3{
+   width:180px;
+   border-bottom:#096DBA solid 2px;
+   height:34px;
+   line-height:34px;
+   text-indent:9px;
+   margin-bottom:-2px;/*for IE6*/
+   position:relative;/*for IE6*/
+}
+/*商品*/
+.item{
+   /*width:25%;写在了 .products .item里了*/
+   float:left;
+   height:265px;/*可设可不设，但为了 IE6 兼容，写上为妥*/
+   position:relative;
+}
+.img_item{
+   height:170px;
+   text-align:center;
+}
+.img_item img{
+   height:170px;
+}
+.item p{
+   line-height:20px;
+}
+.item a{
+   color:#000;
+}
+.item a:hover{
+   text-decoration:underline;
+}
+.money{
+   color:#D4105A;
+   font-weight:bold;
+   padding-top:10px;
+}
+.star{
+   width:16px;
+   height:15px;
+   overflow:hidden;
+   background:url(/home/willyon/ds/icon/star.png) left top no-repeat;
+   display:inline-block;
+   margin-right:1px;
+}
+.item_cont{
+   padding:0 15px;
+}
+.hot{
+   width:52px;
+   height:52px;
+   background:url(/home/willyon/ds/images/hot.png) left top no-repeat;
+   position:absolute;
+   right:28px;
+   top:5px;
+}
+/*筛选*/
+.screening{
+  border-bottom:#CCC solid 1px; 
+  font-family:Verdana;/*为兼容IE6英文显示*/
+}
+.screening dt{
+   line-height:32px;
+   width:74px;
+   text-align:right;
+   float:left;
+   margin-right:42px;
+}
+.limit{
+   width:55px;
+   float:left;
+   line-height:32px;
+}
+.screening .active{
+   background-color:#1D7AD9;
+   color:#FFF;
+}
+.screening a{
+   padding:2px;
+}
+.screening_list{
+   line-height:32px;
+   width:626px;
+   float:left;
+}
+.screening_list li{
+   width:20%;
+   float:left;
+}
+.screen_more{
+   border:#CCC solid 1px;
+   height:23px;
+   line-height:23px;
+   margin-top:4px;
+   float:left;
+   background:url(/home/willyon/ds/icon/dd.png) 98% center no-repeat;
+   padding-right:20px;
+   margin-right:10px;
+}
+.addInfo{
+   height:31px;
+   border:#CCC solid 1px;
+   background-color:#F5F5F5;
+}
+.address{
+   float:left;
+}
+.address .add_text{
+   float:left;
+   line-height:31px;
+   padding-left:12px;
+   padding-right:6px;
+}
+.addInfo .select{
+   margin-top:4px
+}
+.screen_text{
+   line-height:31px;
+   padding-right:80px;
+}
+.check{
+   position:relative;
+   top:-1px;
+   _top:4px;/*兼容IE6*/
+}
+.shop_number{/*兼容IE6*/
+   position:relative;
+   _top:4px;
+}
+.check input,
+.check label{
+   vertical-align:middle;
+}
+.shop_number em{
+   color:#F00;
+   font-style:normal;
+   font-weight:bold;
+}
+.screen_text span{
+   vertical-align:middle;
+}
+.screening_list_more{
+   padding-left:0.5%;
+}
+.screening_list_more .item{
+   width:33.3%;
+}
+.addCar{
+  border:#999 solid 1px; 
+  height:22px;
+  display:inline-block;
+  padding:0 6px 0 23px;
+  background:url(/home/willyon/ds/icon/carr.png) 4px center no-repeat; 
+}
+/*page*/
+.page{
+   text-align:center;
+   position:relative;
+   z-index:2;
+}
+.page a{
+   height:24px;
+   display:inline-block;
+   line-height:24px;
+   border:#CCC solid 1px;
+   padding:0 12px;
+   margin:0 2px;
+}
+.page .hl{
+   display:inline-block;
+   padding:0 12px;
+   margin:0 2px;
+}
+.page .morePage{
+   padding-left:14px;
+   display:inline-block;
+   height:24px;
+   line-height:24px;
+}
+.page .pageNum{
+   width:29px;
+   padding:0 3px;
+   border:#CCC solid 1px;
+   height:24px;
+   line-height:24px\9;
+   text-align:center;
+   margin-left:4px;
+}
+.page .page_btn{
+   width:44px;
+   height:24px;
+   line-height:24px;
+   background-color:#E8E8E8;
+   border:#CCC solid 1px;
+}
+.page .ye{
+   padding:0 8px 0 6px;
+}
+.page a,/*兼容IE6*/
+.page span,/*兼容IE6*/
+.page input{/*兼容IE6*/
+   vertical-align:middle;
+   position:relative;
+}
+
+/*组件*/
+.select{
+   border:#999 solid 1px;
+   height:22px;
+   line-height:22px;
+   float:left;
+   background-color:#FFF;
+   padding-left:10px;
+   padding-right:20px;
+   position:relative;
+   z-index:4;
+}
+.select h3{
+   font-size:12px;
+   font-weight:normal;
+}
+.select span{
+   position:absolute;
+   right:0;
+   top:0;
+   height:100%;
+   width:20px;
+   background:url(/home/willyon/ds/icon/select.png) center center no-repeat;
+}
+.show_select{
+   position:absolute;
+   left:-1px;
+   top:22px;
+   background-color:#FFF;
+   width:100%;
+  border:#999 solid 1px;
+  display:none;
+}
+.show_select li{
+   padding-left:10px;
+}
+
