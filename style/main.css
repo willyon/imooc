@@ -1390,3 +1390,75 @@
 .cart_btnBox{
    text-align:right;
 }
+/*登陆*/
+.login_logo .comWidth{
+   width:460px;
+}
+.welcome_title{
+   font:22px/85px "Microsoft YaHei","微软雅黑";
+   color:#FFF;
+   float:left;
+   padding-left:24px;
+}
+.loginBox{
+   width:458px;
+   border:solid 1px #999;
+   margin:10px auto;
+   position:relative;
+}
+.l_tit{
+  color:#666; 
+  line-height:20px;
+}
+.login_cont{
+   padding:15px 76px;
+}
+.login_input{
+   border:solid 1px #999;
+   height:32px;
+   line-height:32px\9;
+   text-indent:5px;
+   width:100%;
+}
+.user_icon1{
+   background:url(/home/willyon/ds/icon/rentou1.png) right center no-repeat;
+}
+.user_icon2{
+   background:url(/home/willyon/ds/icon/suotou1.png) right center no-repeat;
+}
+.mb_10{
+   margin-bottom:10px;
+}
+.autoLogin{
+  padding-top:27px; 
+  padding-bottom:28px;
+}
+.checked{
+   position:relative;
+   top:3px;
+   margin-right:3px;
+}
+.login_btn{
+   width:310px;
+   height:35px;
+   background:url(/home/willyon/ds/icon/logtu.png) left top no-repeat;
+}
+.login_partners{
+   padding-top:34px;
+}
+.login_list li{
+   float:left;
+   line-height:20px;
+}
+.login_list span{
+   color:#999;
+   margin:0 2px;
+}
+.reg_link{
+   width:114px;
+   height:31px;
+   background:url(/home/willyon/ds/icon/free.png) left center no-repeat;
+   position:absolute;
+   right:31px;
+   bottom:-31px;
+}
