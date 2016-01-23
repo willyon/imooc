@@ -1462,3 +1462,42 @@
    right:31px;
    bottom:-31px;
 }
+.reg_logo .comWidth{
+   width:630px;
+}
+.regBox{
+   width:628px;
+   margin:10px auto;
+   border:solid 1px #CCC;
+}
+.login .tongyi{
+   color:blue;
+}
+.reg_btn{
+   width:273px;
+   height:39px;
+   background:url(/home/willyon/ds/icon/tijiao.png) left top no-repeat;
+}
+.reg_item{
+   font:14px/34px "宋体";
+   width:110px;
+   text-align:right;
+   float:left;
+}
+.reg_item i{
+   color:red;
+   font-style:normal;
+   margin-right:5px;
+}
+.input_item{
+   width:267px;
+   float:left;
+}
+.regBox li{
+   height:45px;
+   vertical-align:top;/*for IE6*/
+}
+.regBox .autoLogin{
+   height:25px;
+   padding-top:10px;
+}
