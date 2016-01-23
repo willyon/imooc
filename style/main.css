@@ -1135,3 +1135,40 @@
    padding:0 20px 0 6px;
    background:url(/home/willyon/ds/icon/sanbiao.png) 60px center no-repeat;
 }
+.review_list{
+   padding-top:18px;
+   margin-bottom:30px;
+}
+.review_userHead{
+   width:170px
+}
+.review_user{
+   width:60px;
+   text-align:center;
+   margin-left:40px;
+}
+.review_user img{
+   width:60px;
+   height:60px;
+   display:block;
+}
+.review_user p{
+  line-height:20px;
+}
+.review_cont{
+   padding-left:170px;
+}
+.stars_text{
+ font-weight:bold;
+ padding-left:10px;
+}
+.starsBox .star{
+   margin-top:1px;
+}
+.review_t{
+   height:24px;
+   padding-top:5px;
+}
+.review_cont p{
+   line-height:30px;
+}
