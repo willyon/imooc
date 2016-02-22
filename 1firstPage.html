@@ -1,328 +1,954 @@
 <!doctype html>
-
 <html>
 <head>
+<!--[if IE 6]>
+<script type="text/javascript" src="/home/willyon/ds/js/DD_belatedPNG_0.0.8a-min.js"></script>
+<script type="text/javascript" src="/home/willyon/ds/js/ie6Fixpng.js"></script>
+<![endif]-->
+<base target="_blank" />
 <meta charset="utf-8">
 <title>首页</title>
 <link rel="stylesheet" type="text/css" href="/home/willyon/ds/style/reset.css" />
 <link rel="stylesheet" type="text/css" href="/home/willyon/ds/style/main.css" />
+<script src="/home/willyon/ds/js/function.js"></script>
+<script src="/home/willyon/ds/js/myFocusJs/myfocus-2.0.1.min.js"></script>
+<script >
+myFocus.set({
+ id:"picBox",
+ pattern:"mF_quwan",
+ time:2,
+ trigger:"mouseover",
+ txtHeight:"default"
+});
+myFocus.set({
+ id:"phoneBox",
+ pattern:"mF_slide3D",
+ time:2,
+ trigger:"mouseover",
+ txtHeight:"default"
+});
+myFocus.set({
+ id:"makeupBox1",
+ pattern:"mF_shutters",
+});
+myFocus.set({
+ id:"makeupBox2",
+ pattern:"mF_shutters",
+});
+myFocus.set({
+ id:"makeupBox3",
+ pattern:"mF_shutters",
+});
+myFocus.set({
+ id:"makeupBox4",
+ pattern:"mF_shutters",
+});
+myFocus.set({
+ id:"makeupBox5",
+ pattern:"mF_shutters",
+});
+myFocus.set({
+ id:"makeupBox6",
+ pattern:"mF_shutters",
+});
+myFocus.set({
+ id:"beautyBox",
+ pattern:"mF_taobao2010",
+ time:3,
+ trigger:"mouseover",
+ txtHeight:"default",
+ direction:"top",<!--运动方向 是mF_taobao2010私有属性-->
+ easing:"easeOut" <!--运动形式为快出慢入 是mF_taobao2010私有属性-->
+});
+</script>
 </head>
-
 <body>
 <div class="headerBar">
   <div class="topBar">
     <div class="comWidth">
-      <div class="leftArea">
-        <a href="#" class="collection">收藏慕课</a>
+      <div class="fl topBar_fontsize">
+        <a href="javascript:void(0);" onclick="AddFavorite('http://www.baidu.com','购购网')" class="collection">收藏购购</a>
+        <!--<a href="#" class="headPage">设置首页</a>-->
         <!--<a href="#" class="collection">联系我们</a>-->
-        <!--<a href="#" class="collection">设置首页</a>-->
       </div>
-      <div class="rightArea">
-        欢迎来到慕课网！<a href="#">[登陆]</a><a href="#">[免费注册]</a>
+      <div class="fr topBar_fontsize">
+        <a href="/home/willyon/ds/1firstPage.html" class="refresh">欢迎来到购购网！</a><a href="/home/willyon/ds/6loginPage.html">[登陆]</a><a href="/home/willyon/ds/7regPage.html">[免费注册]</a>
       </div>
     </div>
   </div>
   <div class="logoBar">
     <div class="comWidth">
       <div class="logo fl">
-        <a href="#">
-          <img src="/home/willyon/ds/images/logo1.png" alt="慕课网" />
+        <a href="/home/willyon/ds/1firstPage.html">
+          <img src="/home/willyon/ds/images/gogoulogo.png" alt="购购网" />
         </a>
       </div>
       <div class="search_box fl">
         <input type="text" class="search_text fl" />
-        <input type="button" value="搜 索" class="search_btn fr" />
+        <input type="submit" value="搜 索" class="search_btn fr" />
       </div>
       <div class="shopCar fr">
-        <span class="shopText fl">购物车</span>
+        <span class="shopText fl"><a href="/home/willyon/ds/5shopCarPage.html" class="shopText_hover">购物车</a></span>
         <span class="shopNum fl">0</span>
       </div>
     </div>
   </div>
   <div class="navBox">
     <div class="comWidth">
-      <div class="shopClass fl">
-        <h3>全部商品分类<i></i></h3>
+      <ul class="shopClass fl">
+        <li class="shopClasshead"><h3>全部商品分类</h3></li>
         <div class="shopClass_show">
-          <dl class="shopClass_item">
-            <dt>
-              <a href="#" class="b">手机</a>
-              <a href="#" class="b">数码</a>
-              <a href="#" class="b heborder">合约机</a>
-            </dt>
-            <dd>
-              <a href="#">荣耀3X</a>
-              <a href="#">单反</a>
-              <a href="#">智能设备</a>
-            </dd>
-          </dl>
-          <dl class="shopClass_item">
-            <dt>
-              <a href="#" class="b">手机</a>
-              <a href="#" class="b">数码</a>
-              <a href="#" class="b heborder">合约机</a>
-            </dt>
-            <dd>
-              <a href="#">荣耀3X</a>
-              <a href="#">单反</a>
-              <a href="#">智能设备</a>
-            </dd>
-          </dl>
-          <dl class="shopClass_item">
-            <dt>
-              <a href="#" class="b">手机</a>
-              <a href="#" class="b">数码</a>
-              <a href="#" class="b heborder">合约机</a>
-            </dt>
-            <dd>
-              <a href="#">荣耀3X</a>
-              <a href="#">单反</a>
-              <a href="#">智能设备</a>
-            </dd>
-          </dl>
-          <dl class="shopClass_item">
-            <dt>
-              <a href="#" class="b">手机</a>
-              <a href="#" class="b">数码</a>
-              <a href="#" class="b heborder">合约机</a>
-            </dt>
-            <dd>
-              <a href="#">荣耀3X</a>
-              <a href="#">单反</a>
-              <a href="#">智能设备</a>
-            </dd>
-          </dl>
-          <dl class="shopClass_item">
-            <dt>
-              <a href="#" class="b">手机</a>
-              <a href="#" class="b">数码</a>
-              <a href="#" class="b heborder">合约机</a>
-            </dt>
-            <dd>
-              <a href="#">荣耀3X</a>
-              <a href="#">单反</a>
-              <a href="#">智能设备</a>
-            </dd>
-          </dl>
-        </div>
+          <li class="shopClass_item linav">
+          <a href="#" class="ah">手机 数码 合约机</a><span class=""></span>
+          <b class=""><a href="#" class="">移动电源 蓝牙手机 手机耳机</a></b>
+          <div class="subnav">
+            <div class="fl">
+              <dl class="clearfix">
+                <dt class="subdt fl">
+                <a href="#" class="">手机通讯</a>
+                </dt>
+                <dd class="subdd fl">
+                <a href="#" class="">手机</a>
+                <a href="#" class="">对讲机</a>
+                <a href="#" class="">手机维修</a>
+                <a href="#" class="">以旧换新</a>
+                </dd>
+              </dl>
+              <dl class="clearfix">
+                <dt class="subdt fl">
+                <a href="#" class="">手机配件</a>
+                </dt>
+                <dd class="subdd fl">
+                <a href="#" class="">移动电源</a>
+                <a href="#" class="">蓝牙手机</a>
+                <a href="#" class="">手机耳机</a>
+                <a href="#" class="">手机支架</a>
+                <a href="#" class="">创意配件</a>
+                <a href="#" class="">拍照配件</a>
+                <a href="#" class="">手机饰件</a>
+                <a href="#" class="">贴膜</a>
+                <a href="#" class="">存储卡</a>
+                <a href="#" class="">无线音箱</a>
+                <a href="#" class="">iPhone配件</a>
+                <a href="#" class="">数据线/充电器</a>
+                </dd>
+              </dl>
+              <dl class="clearfix">
+                <dt class="subdt fl">
+                <a href="#" class="">数码配件</a>
+                </dt>
+                <dd class="subdd fl">
+                <a href="#" class="">存储卡</a>
+                <a href="#" class="">读卡器</a>
+                <a href="#" class="">滤镜</a>
+                <a href="#" class="">手柄</a>
+                <a href="#" class="">相机包</a>
+                <a href="#" class="">云台/三脚架</a>
+                <a href="#" class="">镜头附件</a>
+                <a href="#" class="">闪光灯</a>
+                </dd>
+              </dl>
+              <dl class="clearfix">
+                <dt class="subdt fl">
+                <a href="#" class="">电子教育</a>
+                </dt>
+                <dd class="subdd fl">
+                <a href="#" class="">学生平板</a>
+                <a href="#" class="">点读机/笔</a>
+                <a href="#" class="">早教益智</a>
+                <a href="#" class="">录音笔</a>
+                <a href="#" class="">电纸书</a>
+                <a href="#" class="">电子词典</a>
+                <a href="#" class="">复读机</a>
+                <a href="#" class="">儿童读物</a>
+                </dd>
+              </dl>
+              <dl class="clearfix">
+                <dt class="subdt fl">
+                <a href="#" class="">智能设备</a>
+                </dt>
+                <dd class="subdd fl">
+                <a href="#" class="">智能手环</a>
+                <a href="#" class="">智能手表</a>
+                <a href="#" class="">智能眼镜</a>
+                <a href="#" class="">智能机器人</a>
+                <a href="#" class="">智能家电</a>
+                <a href="#" class="">运动跟踪器</a>
+                <a href="#" class="">健康检测</a>
+                <a href="#" class="">智能配件</a>
+                <a href="#" class="">无人机</a>
+                <a href="#" class="">其他配件</a>
+                </dd>
+              </dl>
+              <dl class="clearfix">
+                <dt class="subdt fl">
+                <a href="#" class="">影音娱乐</a>
+                </dt>
+                <dd class="subdd fl">
+                <a href="#" class="">耳机/耳麦</a>
+                <a href="#" class="">音响/音响</a>
+                <a href="#" class="">收音机</a>
+                <a href="#" class="">麦克风</a>
+                <a href="#" class="">MP3/MP4</a>
+                </dd>
+              </dl>
+              <dl class="clearfix">
+                <dt class="subdt fl">
+                <a href="#" class="">运营商</a>
+                </dt>
+                <dd class="subdd fl">
+                <a href="#" class="">合约机</a>
+                <a href="#" class="">办套餐</a>
+                <a href="#" class="">选号码</a>
+                <a href="#" class="">装宽带</a>
+                <a href="#" class="">中国移动</a>
+                <a href="#" class="">中国联通</a>
+                <a href="#" class="">中国电信</a>
+                <a href="#" class="">购购网运</a>
+                </dd>
+              </dl>
+            </div>
+            <div class="fr">
+              <a href="#" class=""><img src="/home/willyon/ds/images/guang.png" alt=""/></a>
+              <img src="/home/willyon/ds/images/transparent/mmm.png" class="rightPic" alt=""/>
+            </div>
+          </div>
+          </li>
+          <li class="shopClass_item linav">
+          <a href="#" class="ah">电脑 办公 游戏</a><span class=""></span>
+          <b class=""><a href="#" class="">笔记本 打印机 游戏本</a></b>
+          <div class="subnav">
+            <div class="fl">
+              <dl class="clearfix">
+                <dt class="subdt fl">
+                <a href="#">电脑整机</a>
+                </dt>
+                <dd class="subdd fl">
+                <a href="#">笔记本</a> <a href="#">超极本</a> <a href="#">游戏本</a> <a href="#">平板电脑</a>
+                <a href="#">平板电脑配件</a> <a href="#">台式机</a> <a href="#">服务器/工作站</a> <a href="#">笔记本配件</a>
+                </dd>
+              </dl>
+              <dl class="clearfix">
+                <dt class="subdt fl">
+                <a href="#">电脑配件</a>
+                </dt>
+                <dd class="subdd fl">
+                <a href="#">CPU</a> <a href="#">主板</a> <a href="#">显卡</a> <a href="#">硬盘</a> <a href="#">
+                  SSD固态硬盘</a> <a href="#">内存</a> <a href="#">机箱</a> <a href="#">电源</a> <a href="#">显示器</a>
+                <a href="#">刻录机/光驱</a> <a href="#">声卡/扩展卡</a> <a href="#">散热器</a> <a href="#">装机配件</a>
+                <a href="#">组装电脑</a>
+                </dd>
+              </dl>
+              <dl class="clearfix">
+                <dt class="subdt fl">
+                <a href="#">电脑配件</a>         
+                </dt>
+                <dd class="subdd fl">
+                <a href="#">鼠标</a> <a href="#">键盘</a> <a href="#">游戏设备</a> <a href="#">U盘</a> <a
+                  href="#">移动硬盘</a> <a href="#">鼠标垫</a> <a href="#">摄像头</a> <a href="#">线缆</a>
+                <a href="#">电玩</a> <a href="#">手写板</a> <a href="#">外置盒</a> <a href="#">电脑工具</a>
+                <a href="#">电脑清洁</a> <a href="#">UPS</a> <a href="#">插座</a>
+                </dd>
+              </dl>
+              <dl class="clearfix">
+                <dt class="subdt fl">
+                <a href="#">外设产品</a>             
+                </dt>
+                <dd class="subdd fl">
+                <a href="#">鼠标</a> <a href="#">键盘</a> <a href="#">游戏设备</a> <a href="#">U盘</a> <a
+                  href="#">移动硬盘</a> <a href="#">鼠标垫</a> <a href="#">摄像头</a> <a href="#">线缆</a>
+                <a href="#">电玩</a> <a href="#">手写板</a> <a href="#">外置盒</a> <a href="#">电脑工具</a>
+                <a href="#">电脑清洁</a> <a href="#">UPS</a> <a href="#">插座</a>
+                </dd>
+              </dl>
+              <dl class="clearfix">
+                <dt class="subdt fl">
+                <a href="#">网络产品</a>
+                </dt>
+                <dd class="subdd fl">
+                <a href="#">路由器</a> <a href="#">网卡</a> <a href="#">交换机</a> <a href="#">网络存储</a>
+                <a href="#">4G/3G上网</a> <a href="#">网络盒子</a> <a href="#">网络配件</a>
+                </dd>
+              </dl>
+              <dl class="clearfix">
+                <dt class="subdt fl">
+                <a href="#">办公打印</a>
+                </dt>
+                <dd class="subdd fl">
+                <a href="#">打印机</a> <a href="#">一体机</a> <a href="#">投影机</a> <a href="#">投影配件</a>
+                <a href="#">传真机</a> <a href="#">复合机</a> <a href="#">碎纸机</a> <a href="#">扫描仪</a>
+                <a href="#">墨盒</a> <a href="#">硒鼓</a> <a href="#">墨粉</a> <a href="#">色带</a>
+                </dd>
+              </dl>
+            </div>
+            <div class="fr">
+              <a href="#" class=""><img src="/home/willyon/ds/images/guang.png" alt=""/></a>
+              <img src="/home/willyon/ds/images/transparent/ddm.png" class="rightPic" alt=""/>
+            </div>
+          </div>
+          </li>
+          <li class="shopClass_item linav">
+          <a href="#" class="ah">食品 酒类 生鲜</a>
+          <span class=""></span><b class=""><a href="#" class="">葡萄酒 进口食品</a></b>
+          <div class="subnav">
+            <div class="fl">
+              <dl class="clearfix">
+                <dt class="subdt fl">
+                <a href="#">中外名酒</a>
+                </dt>
+                <dd class="subdd fl">
+                <a href="#">白酒</a> <a href="#">葡萄酒</a> <a href="#">洋酒</a> <a href="#">啤酒</a> <a href="#">
+                  黄酒/养生酒</a> <a href="#">收藏酒/陈年老酒</a>
+                </dd>
+              </dl>
+              <dl class="clearfix">
+                <dt class="subdt fl">
+                <a href="#">进口食品</a>
+                </dt>
+                <dd class="subdd fl">
+                <a href="#">牛奶</a> <a href="#">饼干蛋糕</a> <a href="#">糖果/巧克力</a> <a href="#">休闲零食</a>
+                <a href="#">冲调饮品</a> <a href="#">粮油调味</a>
+                </dd>
+              </dl>
+              <dl class="clearfix">
+                <dt class="subdt fl">
+                <a href="#">休闲食品</a>
+                </dt>
+                <dd class="subdd fl">
+                <a href="#">休闲零食</a> <a href="#">坚果炒货</a> <a href="#">肉干肉脯</a> <a href="#">蜜饯果干</a>
+                <a href="#">糖果/巧克力</a> <a href="#">饼干蛋糕</a> <a href="#">无糖食品</a>
+                </dd>
+              </dl>
+              <dl class="clearfix">
+                <dt class="subdt fl">
+                <a href="#">地方特产</a>
+                </dt>
+                <dd class="subdd fl">
+                <a href="#">新疆</a> <a href="#">四川</a> <a href="#">云南</a> <a href="#">湖南</a> <a href="#">
+                  内蒙</a> <a href="#">北京</a> <a href="#">山西</a> <a href="#">福建</a> <a href="#">东北</a>
+                <a href="#">其他</a>
+                </dd>
+              </dl>
+            </div>
+            <div class="fr">
+            </div>
+          </div>
+          </li>
+          <li class="shopClass_item linav">
+          <a href="#" class="ah">图书 音像 电子书</a>
+          <span class=""></span><b class=""><a href="#" class="">免费 通俗流行 音像</a></b>
+          <div class="subnav">
+            <div class="fl">
+              <dl class="clearfix">
+                <dt class="subdt fl">
+<a href="#">电子书</a>
+                </dt>
+                <dd class="subdd fl">
+                            <a href="#">免费</a> <a href="#">小说</a> <a href="#">励志与成功</a> <a href="#">婚恋/两性</a>
+                            <a href="#">文学</a> <a href="#">经管</a> <a href="#">畅读VIP</a>
+                </dd>
+              </dl>
+              <dl class="clearfix">
+                <dt class="subdt fl">
+<a href="#">数字音乐</a>
+                </dt>
+                <dd class="subdd fl">
+                            <a href="#">通俗流行</a> <a href="#">古典音乐</a> <a href="#">摇滚说唱</a> <a href="#">爵士蓝调</a>
+                            <a href="#">乡村民谣</a> <a href="#">有声读物</a>
+                </dd>
+              </dl>
+              <dl class="clearfix">
+                <dt class="subdt fl">
+<a href="#">音像</a>
+                </dt>
+                <dd class="subdd fl">
+                            <a href="#">音乐</a> <a href="#">影视</a> <a href="#">教育音像</a> <a href="#">游戏</a>
+                </dd>
+              </dl>
+              <dl class="clearfix">
+                <dt class="subdt fl">
+<a href="#">文艺</a>
+                </dt>
+                <dd class="subdd fl">
+                            <a href="#">小说</a> <a href="#">文学</a> <a href="#">青春文学</a> <a href="#">传记</a> <a
+                                href="#">艺术</a>
+                </dd>
+              </dl>
+            </div>
+            <div class="fr">
+            </div>
+          </div>
+          </li>
+          <li class="shopClass_item linav">
+          <a href="#" class="ah">男装 女装 内衣</a>
+          <span class=""></span><b class=""><a href="#" class="">衬衫 短外套 文胸</a></b>
+          <div class="subnav">
+            <div class="fl">
+              <dl class="clearfix">
+                <dt class="subdt fl">
+<a href="#">男装</a>
+                </dt>
+                <dd class="subdd fl">
+<a href="#">衬衫</a> <a href="#">T恤</a> <a href="#">POLO衫</a> <a href="#">针织衫</a>
+                            <a href="#">夹克</a> <a href="#">卫衣</a> <a href="#">风衣</a> <a href="#">马甲/背心</a> <a
+                                href="#">短裤</a> <a href="#">休闲裤</a> <a href="#">牛仔裤</a> <a href="#">西服</a> <a href="#">
+                                    西裤</a> <a href="#">西服套装</a> <a href="#">真皮皮衣</a> <a href="#">仿皮皮衣</a> <a href="#">羽绒服</a>
+                            <a href="#">毛呢大衣</a> <a href="#">棉服</a> <a href="#">羊绒衫</a> <a href="#">羊毛衫</a>
+                            <a href="#">卫裤/运动裤</a> <a href="#">加绒裤</a> <a href="#">设计师/潮牌</a> <a href="#">唐装/中山装</a>
+                            <a href="#">工装</a> <a href="#">中老年男装</a> <a href="#">大码男装</a>
+                </dd>
+              </dl>
+              <dl class="clearfix">
+                <dt class="subdt fl">
+<a href="#">女装</a>
+                </dt>
+                <dd class="subdd fl">
+                            <a href="#">连衣裙</a> <a href="#">蕾丝/雪纺衫</a> <a href="#">衬衫</a> <a href="#">T恤</a>
+                            <a href="#">半身裙</a> <a href="#">休闲裤</a> <a href="#">短裤</a> <a href="#">牛仔裤</a> <a
+                                href="#">针织衫</a> <a href="#">吊带/背心</a> <a href="#">打底衫</a> <a href="#">打底裤</a>
+                            <a href="#">正装裤</a> <a href="#">小西服</a> <a href="#">马甲</a> <a href="#">风衣</a> <a
+                                href="#">羊毛衫</a> <a href="#">羊绒衫</a> <a href="#">短外套</a> <a href="#">棉服</a>
+                            <a href="#">毛呢大衣</a> <a href="#">加绒裤</a> <a href="#">羽绒服</a> <a href="#">皮草</a>
+                            <a href="#">真皮皮衣</a> <a href="#">仿皮皮衣</a> <a href="#">旗袍/唐装</a> <a href="#">礼服</a>
+                            <a href="#">婚纱</a> <a href="#">中老年女装</a> <a href="#">大码女装</a> <a href="#">设计师/潮牌</a>
+                </dd>
+              </dl>
+              <dl class="clearfix">
+                <dt class="subdt fl">
+<a href="#">内衣</a>
+                </dt>
+                <dd class="subdd fl">
+                            <a href="#">文胸</a> <a href="#">睡衣/家居服</a> <a href="#">情侣睡衣</a> <a href="#">文胸套装</a>
+                            <a href="#">少女文胸</a> <a href="#">女式内裤</a> <a href="#">男式内裤</a> <a href="#">商务男袜</a>
+                            <a href="#">休闲棉袜</a> <a href="#">吊带/背心</a> <a href="#">打底衫</a> <a href="#">抹胸</a>
+                            <a href="#">连裤袜/丝袜</a> <a href="#">美腿袜</a> <a href="#">打底裤袜</a> <a href="#">塑身美体</a>
+                            <a href="#">大码内衣</a> <a href="#">内衣配件</a> <a href="#">泳衣</a> <a href="#">秋衣秋裤</a>
+                            <a href="#">保暖内衣</a>
+                </dd>
+              </dl>
+            </div>
+            <div class="fr">
+            </div>
+          </div>
+          </li>
+          <li class="shopClass_item linav">
+          <a href="#" class="ah">个护化妆 清洁用品 </a> 
+          <span class=""></span><b class=""><a href="#" class="">护肤 清洁 造型</a></b>
+          <div class="subnav">
+            <div class="fl">
+              <dl class="clearfix">
+                <dt class="subdt fl">
+<a href="#">面部护肤</a>
+                </dt>
+                <dd class="subdd fl">
+                            <a href="#">清洁</a> <a href="#">护肤</a> <a href="#">面膜</a> <a href="#">剃须</a> <a href="#">
+                                套装</a>
+                </dd>
+              </dl>
+              <dl class="clearfix">
+                <dt class="subdt fl">
+<a href="#">洗发护发</a>                </dt>
+                <dd class="subdd fl">
+                            <a href="#">洗发</a> <a href="#">护发</a> <a href="#">染发</a> <a href="#">造型</a> <a href="#">
+                                假发</a> <a href="#">套装</a>
+                </dd>
+              </dl>
+              <dl class="clearfix">
+                <dt class="subdt fl">
+<a href="#">身体护肤</a>
+                </dt>
+                <dd class="subdd fl">
+                            <a href="#">沐浴</a> <a href="#">润肤</a> <a href="#">颈部</a> <a href="#">手足</a> <a href="#">
+                                纤体塑形</a> <a href="#">美胸</a> <a href="#">套装</a>
+                </dd>
+              </dl>
+              <dl class="clearfix">
+                <dt class="subdt fl">
+<a href="#">口腔护理</a>
+                </dt>
+                <dd class="subdd fl">
+                            <a href="#">牙膏/牙粉</a> <a href="#">牙刷/牙线</a> <a href="#">漱口水</a> <a href="#">套装</a>
+                </dd>
+              </dl>
+              <dl class="clearfix">
+                <dt class="subdt fl">
+<a href="#">女性护理</a>
+                </dt>
+                <dd class="subdd fl">
+                            <a href="#">卫生巾</a> <a href="#">卫生护垫</a> <a href="#">私密护理</a> <a href="#">脱毛膏</a>
+                </dd>
+              </dl>
+              <dl class="clearfix">
+                <dt class="subdt fl">
+<a href="#">香水彩妆</a>
+                </dt>
+                <dd class="subdd fl">
+                            <a href="#">香水</a> <a href="#">底妆</a> <a href="#">腮红</a> <a href="#">眼部</a> <a href="#">
+                                唇部</a> <a href="#">美甲</a> <a href="#">美容工具</a> <a href="#">套装</a>
+                </dd>
+              </dl>
+            </div>
+            <div class="fr">
+            </div>
+          </div>
+          </li>
+          <li class="shopClass_item linav">
+          <a href="#" class="ah">家居 家具 家装</a>
+          <span class=""></span><b class=""><a href="#" class="">卫浴 餐具</a></b>
+          <div class="subnav">
+            <div class="fl">
+              <dl class="clearfix">
+                <dt class="subdt fl">
+<a href="#">厨具</a>
+                </dt>
+                <dd class="subdd fl">
+                            <a href="#">烹饪锅具</a> <a href="#">刀剪菜板</a> <a href="#">厨房配件</a> <a href="#">水具酒具</a>
+                            <a href="#">餐具</a> <a href="#">茶具/咖啡具</a>
+                </dd>
+              </dl>
+              <dl class="clearfix">
+                <dt class="subdt fl">
+<a href="#">家装建材</a>
+                </dt>
+                <dd class="subdd fl">
+                            <a href="#">灯饰照明</a> <a href="#">厨房卫浴</a> <a href="#">五金工具</a> <a href="#">电工电料</a>
+                            <a href="#">墙地面材料</a> <a href="#">装饰材料</a> <a href="#">装修服务</a> <a href="#">吸顶灯</a>
+                            <a href="#">淋浴花洒</a> <a href="#">开关插座</a> <a href="#">油漆涂料</a> <a href="#">龙头</a>
+                </dd>
+              </dl>
+              <dl class="clearfix">
+                <dt class="subdt fl">
+<a href="#">家纺</a>
+                </dt>
+                <dd class="subdd fl">
+                            <a href="#">床品套件</a> <a href="#">被子</a> <a href="#">蚊帐</a> <a href="#">凉席</a> <a
+                                href="#">床单被罩</a> <a href="#">枕芯</a> <a href="#">毛巾浴巾</a> <a href="#">布艺软饰</a>
+                            <a href="#">毯子</a> <a href="#">抱枕靠垫</a> <a href="#">床垫/床褥</a> <a href="#">窗帘/窗纱</a>
+                            <a href="#">电热毯</a>
+                </dd>
+              </dl>
+              <dl class="clearfix">
+                <dt class="subdt fl">
+<a href="#">家具</a>
+                </dt>
+                <dd class="subdd fl">
+                            <a href="#">床品套件</a> <a href="#">被子</a> <a href="#">蚊帐</a> <a href="#">凉席</a> <a
+                                href="#">床单被罩</a> <a href="#">枕芯</a> <a href="#">毛巾浴巾</a> <a href="#">布艺软饰</a>
+                            <a href="#">毯子</a> <a href="#">抱枕靠垫</a> <a href="#">床垫/床褥</a> <a href="#">窗帘/窗纱</a>
+                            <a href="#">电热毯</a>
+                </dd>
+              </dl>
+            </div>
+            <div class="fr">
+            </div>
+          </div>
+          </li>
+          <li class="shopClass_item linav">
+          <a href="#" class="ah">汽车 汽车用品</a>
+          <span class=""></span><b class=""><a href="#" class="">保养 喇叭 防冻液</a></b>
+          <div class="subnav">
+            <div class="fl">
+              <dl class="clearfix">
+                <dt class="subdt fl">
+<a href="#">维修保养</a>
+                </dt>
+                <dd class="subdd fl">
+                           <a href="#">润滑油</a> <a href="#">添加剂</a> <a href="#">防冻液</a> <a href="#">滤清器</a>
+                            <a href="#">火花塞</a> <a href="#">雨刷</a> <a href="#">车灯</a> <a href="#">后视镜</a> <a
+                                href="#">轮胎</a> <a href="#">轮毂</a> <a href="#">刹车片/盘</a> <a href="#">喇叭/皮带</a>
+                            <a href="#">蓄电池</a> <a href="#">底盘装甲/护板</a> <a href="#">贴膜</a> <a href="#">汽修工具</a>
+                </dd>
+              </dl>
+              <dl class="clearfix">
+                <dt class="subdt fl">
+<a href="#">车载电器</a>
+                </dt>
+                <dd class="subdd fl">
+                            <a href="#">导航仪</a> <a href="#">安全预警仪</a> <a href="#">行车记录仪</a> <a href="#">倒车雷达</a>
+                            <a href="#">蓝牙设备</a> <a href="#">时尚影音</a> <a href="#">净化器</a> <a href="#">电源</a>
+                            <a href="#">冰箱</a> <a href="#">吸尘器</a>
+                </dd>
+              </dl>
+              <dl class="clearfix">
+                <dt class="subdt fl">
+<a href="#">美容清洗</a>
+                </dt>
+                <dd class="subdd fl">
+                            <a href="#">车蜡</a> <a href="#">补漆笔</a> <a href="#">玻璃水</a> <a href="#">清洁剂</a> <a
+                                href="#">洗车工具</a> <a href="#">洗车配件</a>
+                </dd>
+              </dl>
+              <dl class="clearfix">
+                <dt class="subdt fl">
+<a href="#">汽车装饰</a>
+                </dt>
+                <dd class="subdd fl">
+                            <a href="#">脚垫</a> <a href="#">座垫</a> <a href="#">座套</a> <a href="#">后备箱垫</a> <a
+                                href="#">头枕腰靠</a> <a href="#">香水</a> <a href="#">空气净化</a> <a href="#">车内饰品</a>
+                            <a href="#">功能小件</a> <a href="#">车身装饰件</a> <a href="#">车衣</a>
+                </dd>
+              </dl>
+            </div>
+            <div class="fr">
+            </div>
+          </div>
+          </li>
+          <li class="shopClass_item linav">
+          <a href="#" class="ah">户外运动</a>
+          <span class=""></span><b class=""><a href="#" class="">跑步鞋 运动裤</a></b>
+          <div class="subnav">
+            <div class="fl">
+              <dl class="clearfix">
+                <dt class="subdt fl">
+                <a href="#" class="">运动鞋包</a>
+                </dt>
+                <dd class="subdd fl">
+                <a href="#" class="">跑步鞋</a>
+                <a href="#" class="">休闲鞋</a>
+                <a href="#" class="">篮球鞋</a>
+                <a href="#" class="">板鞋</a>
+                </dd>
+              </dl>
+              <dl class="clearfix">
+                <dt class="subdt fl">
+                <a href="#" class="">运动服饰</a>
+                </dt>
+                <dd class="subdd fl">
+                <a href="#" class="">运动套装</a>
+                <a href="#" class="">羽绒服</a>
+                <a href="#" class="">卫衣/套头衫</a>
+                <a href="#" class="">棉服</a>
+                <a href="#" class="">运动裤</a>
+                <a href="#" class="">夹克</a>
+                <a href="#" class="">风衣</a>
+                <a href="#" class="">运动配饰</a>
+                </dd>
+              </dl>
+              <dl class="clearfix">
+                <dt class="subdt fl">
+                <a href="#" class="">健身训练</a>
+                </dt>
+                <dd class="subdd fl">
+                <a href="#" class="">跑步机</a>
+                <a href="#" class="">哑铃</a>
+                <a href="#" class="">甩腹机</a>
+                <a href="#" class="">运动护具</a>
+                <a href="#" class="">瑜伽舞蹈</a>
+                </dd>
+              </dl>
+            </div>
+            <div class="fr">
+            </div>
+          </div>
+          </li>
+          <li class="shopClass_item linav">
+          <a href="#" class="ah">理财 众筹 白条</a>
+          <span class=""></span><b class=""><a href="#" class="">购购小金库 校园白条</a></b>
+          <div class="subnav">
+            <div class="fl">
+              <dl class="clearfix">
+                <dt class="subdt fl">
+                <a href="#" class="">理财</a>
+                </dt>
+                <dd class="subdd fl">
+                <a href="#" class="">购购小金库</a>
+                <a href="#" class="">票据理财</a>
+                <a href="#" class="">基金理财</a>
+                <a href="#" class="">定期理财</a>
+                </dd>
+              </dl>
+              <dl class="clearfix">
+                <dt class="subdt fl">
+                <a href="#" class="">众筹</a>
+                </dt>
+                <dd class="subdd fl">
+                <a href="#" class="">智能硬件</a>
+                <a href="#" class="">流行文化</a>
+                <a href="#" class="">生活美学</a>
+                </dd>
+              </dl>
+              <dl class="clearfix">
+                <dt class="subdt fl">
+                <a href="#" class="">白条</a>
+                </dt>
+                <dd class="subdd fl">
+                <a href="#" class="">购购白条</a>
+                <a href="#" class="">白条联名卡</a>
+                <a href="#" class="">校园白条</a>
+                </dd>
+              </dl>
+            </div>
+            <div class="fr">
+            </div>
+          </div>
+          </li>
+        </ul>
+        <ul class="nav fl">
+          <li><a href="http://yingxiang.jd.com" class="active">数码城</a></li>
+          <li><a href="http://www.jd.hk">全球购</a></li>
+          <li><a href="http://tuan.jd.com">团购</a></li>
+          <li><a href="http://jr.jd.com">金融</a></li>
+          <li><a href="http://auction.jd.com">拍卖</a></li>
+          <li><a href="http://chaoshi.jd.com">超市</a></li>
+        </ul>
       </div>
-      <ul class="nav fl">
-        <li><a href="#" class="active">数码城</a></li>
-        <li><a href="#">天黑黑</a></li>
-        <li><a href="#">团购</a></li>
-        <li><a href="#">发现</a></li>
-        <li><a href="#">二手特卖</a></li>
-        <li><a href="#">名品会</a></li>
+    </div>
+  </div>
+</div>
+<div class="comWidth main1">
+  <div class="banner clearfix" id="picBox">
+    <div class="loading">
+      <img src="/home/willyon/ds/icon/loading.gif" alt="请稍后..."/>
+    </div>
+    <div class="banner_bar pic">
+      <ul class="">
+        <li><a href="http://huaban.com/boards/26254646" class=""><img src="/home/willyon/ds/images/eat/1.1.jpg" alt="标题1" text="详细描述1"/></a></li>
+        <li><a href="http://huaban.com/boards/26254646" class=""><img src="/home/willyon/ds/images/eat/2.1.jpg" alt="标题2" text="详细描述2"/></a></li>
+        <li><a href="http://huaban.com/boards/26254646" class=""><img src="/home/willyon/ds/images/eat/3.1.jpg" alt="标题3" text="详细描述3"/></a></li>
+        <li><a href="http://huaban.com/boards/26254646" class=""><img src="/home/willyon/ds/images/eat/4.1.jpg" alt="标题4" text="详细描述4"/></a></li>
+        <li><a href="http://huaban.com/boards/26254646" class=""><img src="/home/willyon/ds/images/eat/5.1.jpg" alt="标题5" text="详细描述5"/></a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="hotsale">
+    <div class="hotsalehead">
+      <span class="hothead">购购快讯</span>
+      <a href="http://www.jd.com" class="hhmore">更多&gt;&gt;</a>
+    </div>
+    <dl class="hotdl">
+      <dt class="dtlist"><a href="#" class="">[开学惠]</a></dt>
+      <dd class="ddlist"><a href="#" class="">开学特惠，大牌鞋服低至7折</a></dd>
+      <dt class="dtlist"><a href="#" class="">[公告]</a></dt>
+      <dd class="ddlist"><a href="#" class="">购购广工大“购行广工”活动即秀即送</a></dd>
+      <dt class="dtlist"><a href="#" class="">[“精零”秀]</a></dt>
+      <dd class="ddlist"><a href="#" class="">精美零食开学周狂折优惠</a></dd>
+      <dt class="dtlist"><a href="#" class="">[护肤系列]</a></dt>
+      <dd class="ddlist"><a href="#" class="">呵护女神，“伊美”永存</a></dd>
+      <dt class="dtlist"><a href="#" class="">[iphone7]</a></dt>
+      <dd class="ddlist"><a href="#" class="">爱疯7功能疯狂预测</a></dd>
+    </dl>
+    <div class="cap">衣食住行</div>
+    <table class="life">
+      <tr class="lifetr">
+        <td><a href="#" class="">鞋裤</a></td>
+        <td><a href="#" class="">零食</a></td>
+        <td><a href="#" class="">充值</a></td>
+      </tr>
+      <tr class="lifetr">
+        <td><a href="#" class="">手机</a></td>
+        <td><a href="#" class="">家电</a></td>
+        <td><a href="#" class="">佳品</a></td>
+      </tr>
+    </table>
+  </div>
+</div>
+<div class="shopTit comWidth">
+  <h3>Go.gou手机</h3>
+  <a href="#" class="more">更多&gt;&gt;</a>
+</div>
+<div class="shopList comWidth clearfix main2">
+  <div class="fl phonechang" id="phoneBox">
+    <div class="loading">
+      <img src="/home/willyon/ds/icon/loading.gif" alt="请稍后..."/>
+    </div>
+    <div class="pic">
+      <ul class="">
+        <li><a href="#" class=""><img src="/home/willyon/ds/images/phonechang/chang1.1.png" alt="标题1" text="详细描述1"/></a></li>
+        <li><a href="#" class=""><img src="/home/willyon/ds/images/phonechang/chang2.1.png" alt="标题2" text="详细描述2"/></a></li>
+        <li><a href="#" class=""><img src="/home/willyon/ds/images/phonechang/chang3.1.png" alt="标题3" text="详细描述3"/></a></li>
+        <li><a href="#" class=""><img src="/home/willyon/ds/images/phonechang/chang4.1.png" alt="标题4" text="详细描述4"/></a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="fr clearfix">
+    <div class="shop_item">
+      <div class="shop_img">
+        <a href="#"><img src="/home/willyon/ds/images/phonesmall/1.jpg" alt="手机"/></a>
+      </div>
+      <h3>Apple iPhone 6s Plus(A1699) 64G玫瑰</h3>
+      <p>￥6488.00</p>
+    </div>
+    <div class="shop_item">
+      <div class="shop_img">
+        <a href="#"><img src="/home/willyon/ds/images/phonesmall/2.jpg" alt="手机"/></a>
+      </div>
+      <h3>小米 红米2A 高配 白色 移动4G手机 双卡</h3>
+      <p>￥499.00</p>
+    </div>
+    <div class="shop_item meizu">
+      <div class="shop_img">
+        <a href="#"><img src="/home/willyon/ds/images/phonesmall/3.jpg" alt="手机"/></a>
+      </div>
+      <h3>魅族 魅蓝note 16GB 白色 移动联通双4</h3>
+      <p>￥799.00</p>
+    </div>
+    <div class="shop_item">
+      <div class="shop_img">
+        <a href="#"><img src="/home/willyon/ds/images/phonesmall/4.jpg" alt="手机"/></a>
+      </div>
+      <h3>Apple iPhone 6s(A1700) 16G 金色 移动</h3>
+      <p>￥4988.00</p>
+    </div>
+    <div class="shop_item">
+      <div class="shop_img">
+        <a href="#"><img src="/home/willyon/ds/images/phonesmall/7.jpg" alt="手机"/></a>
+      </div>
+      <h3>Apple iPhone 5s(A1530) 16G 金色 移动</h3>
+      <p>￥2488.00</p>
+    </div>
+    <div class="shop_item mi">
+      <div class="shop_img">
+        <a href="#"><img src="/home/willyon/ds/images/phonesmall/6.jpg" alt="手机"/></a>
+      </div>
+      <h3>小米 4c 高配版 全网通 白色 移动联通电信</h3>
+      <p>￥1499.00</p>
+    </div>
+  </div>
+</div>
+<div class="shopTit comWidth">
+  <span class="icon"></span><h3>Go.gou美妆</h3>
+  <a href="#" class="more">更多&gt;&gt;</a>
+</div>
+<div class="comWidth clearfix main3">
+  <ul class="fl">
+    <li><a href="#"><img src="/home/willyon/ds/images/makeup/1.1.png" alt="banner"></a></li>
+    <li><a href="#"><img src="/home/willyon/ds/images/makeup/3.1.png" alt="banner"></a></li>
+  </ul>
+  <div class="beauty" id="beautyBox">
+    <div class="loading">
+      <img src="/home/willyon/ds/icon/loading.gif" alt="请稍后..."/>
+    </div>
+    <div class="pic">
+      <ul class="">
+        <li><a href="#" class=""><img src="/home/willyon/ds/images/beauty/1.1.jpg" alt="海报" text="详细描述1"/></a></li>
+        <li><a href="#" class=""><img src="/home/willyon/ds/images/beauty/2.1.jpg" alt="海报" text="详细描述1"/></a></li>
+        <li><a href="#" class=""><img src="/home/willyon/ds/images/beauty/3.1.jpg" alt="海报" text="详细描述1"/></a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="makeupall" id="makeupBox1">
+    <div class="loading">
+      <img src="/home/willyon/ds/icon/loading.gif" alt="请稍后..."/>
+    </div>
+    <div class="pic">
+      <ul class="">
+        <li><a href="#" class=""><img src="/home/willyon/ds/images/makeupall/1.jpg" alt="女士" text="详细描述1"/></a></li>
+        <li><a href="#" class=""><img src="/home/willyon/ds/images/makeupall/2.jpg" alt="女士" text="详细描述2"/></a></li>
+        <li><a href="#" class=""><img src="/home/willyon/ds/images/makeupall/3.jpg" alt="女士" text="详细描述3"/></a></li>
+        <li><a href="#" class=""><img src="/home/willyon/ds/images/makeupall/4.jpg" alt="女士" text="详细描述4"/></a></li>
+        <li><a href="#" class=""><img src="/home/willyon/ds/images/makeupall/5.jpg" alt="女士" text="详细描述5"/></a></li>
+        <li><a href="#" class=""><img src="/home/willyon/ds/images/makeupall/5.jpg" alt="女士" text="详细描述5"/></a></li>
+        <li><a href="#" class=""><img src="/home/willyon/ds/images/makeupall/5.jpg" alt="女士" text="详细描述5"/></a></li>
+        <li><a href="#" class=""><img src="/home/willyon/ds/images/makeupall/5.jpg" alt="女士" text="详细描述5"/></a></li>
+        <li><a href="#" class=""><img src="/home/willyon/ds/images/makeupall/5.jpg" alt="女士" text="详细描述5"/></a></li>
+        <li><a href="#" class=""><img src="/home/willyon/ds/images/makeupall/5.jpg" alt="女士" text="详细描述5"/></a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="makeupall" id="makeupBox2">
+    <div class="loading">
+      <img src="/home/willyon/ds/icon/loading.gif" alt="请稍后..."/>
+    </div>
+    <div class="pic">
+      <ul class="">
+        <li><a href="#" class=""><img src="/home/willyon/ds/images/man/1.jpg" alt="男士" text="详细描述1"/></a></li>
+        <li><a href="#" class=""><img src="/home/willyon/ds/images/man/2.jpg" alt="男士" text="详细描述2"/></a></li>
+        <li><a href="#" class=""><img src="/home/willyon/ds/images/man/3.jpg" alt="男士" text="详细描述3"/></a></li>
+        <li><a href="#" class=""><img src="/home/willyon/ds/images/man/4.jpg" alt="男士" text="详细描述4"/></a></li>
+        <li><a href="#" class=""><img src="/home/willyon/ds/images/man/5.jpg" alt="男士" text="详细描述5"/></a></li>
+        <li><a href="#" class=""><img src="/home/willyon/ds/images/man/6.jpg" alt="男士" text="详细描述5"/></a></li>
+        <li><a href="#" class=""><img src="/home/willyon/ds/images/man/7.jpg" alt="男士" text="详细描述5"/></a></li>
+        <li><a href="#" class=""><img src="/home/willyon/ds/images/man/8.jpg" alt="男士" text="详细描述5"/></a></li>
+        <li><a href="#" class=""><img src="/home/willyon/ds/images/man/9.jpg" alt="男士" text="详细描述5"/></a></li>
+        <li><a href="#" class=""><img src="/home/willyon/ds/images/man/0.jpg" alt="男士" text="详细描述5"/></a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="makeupall" id="makeupBox3">
+    <div class="loading">
+      <img src="/home/willyon/ds/icon/loading.gif" alt="请稍后..."/>
+    </div>
+    <div class="pic">
+      <ul class="">
+        <li><a href="#" class=""><img src="/home/willyon/ds/images/yalan/1.jpg" alt="雅诗兰黛" text="详细描述1"/></a></li>
+        <li><a href="#" class=""><img src="/home/willyon/ds/images/yalan/2.jpg" alt="雅诗兰黛" text="详细描述2"/></a></li>
+        <li><a href="#" class=""><img src="/home/willyon/ds/images/yalan/3.jpg" alt="雅诗兰黛" text="详细描述3"/></a></li>
+        <li><a href="#" class=""><img src="/home/willyon/ds/images/yalan/4.jpg" alt="雅诗兰黛" text="详细描述4"/></a></li>
+        <li><a href="#" class=""><img src="/home/willyon/ds/images/yalan/5.jpg" alt="雅诗兰黛" text="详细描述5"/></a></li>
+        <li><a href="#" class=""><img src="/home/willyon/ds/images/yalan/6.jpg" alt="雅诗兰黛" text="详细描述5"/></a></li>
+        <li><a href="#" class=""><img src="/home/willyon/ds/images/yalan/7.jpg" alt="雅诗兰黛" text="详细描述5"/></a></li>
+        <li><a href="#" class=""><img src="/home/willyon/ds/images/yalan/8.jpg" alt="雅诗兰黛" text="详细描述5"/></a></li>
+        <li><a href="#" class=""><img src="/home/willyon/ds/images/yalan/9.jpg" alt="雅诗兰黛" text="详细描述5"/></a></li>
+        <li><a href="#" class=""><img src="/home/willyon/ds/images/yalan/0.jpg" alt="雅诗兰黛" text="详细描述5"/></a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="makeupall" id="makeupBox4">
+    <div class="loading">
+      <img src="/home/willyon/ds/icon/loading.gif" alt="请稍后..."/>
+    </div>
+    <div class="pic">
+      <ul class="">
+        <li><a href="#" class=""><img src="/home/willyon/ds/images/mask/1.jpg" alt="面膜" text="详细描述1"/></a></li>
+        <li><a href="#" class=""><img src="/home/willyon/ds/images/mask/2.jpg" alt="面膜" text="详细描述1"/></a></li>
+        <li><a href="#" class=""><img src="/home/willyon/ds/images/mask/3.jpg" alt="面膜" text="详细描述1"/></a></li>
+        <li><a href="#" class=""><img src="/home/willyon/ds/images/mask/4.jpg" alt="面膜" text="详细描述1"/></a></li>
+        <li><a href="#" class=""><img src="/home/willyon/ds/images/mask/5.jpg" alt="面膜" text="详细描述1"/></a></li>
+        <li><a href="#" class=""><img src="/home/willyon/ds/images/mask/6.jpg" alt="面膜" text="详细描述1"/></a></li>
+        <li><a href="#" class=""><img src="/home/willyon/ds/images/mask/7.jpg" alt="面膜" text="详细描述1"/></a></li>
+        <li><a href="#" class=""><img src="/home/willyon/ds/images/mask/8.jpg" alt="面膜" text="详细描述1"/></a></li>
+        <li><a href="#" class=""><img src="/home/willyon/ds/images/mask/9.jpg" alt="面膜" text="详细描述1"/></a></li>
+        <li><a href="#" class=""><img src="/home/willyon/ds/images/mask/0.jpg" alt="面膜" text="详细描述1"/></a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="makeupall" id="makeupBox5">
+    <div class="loading">
+      <img src="/home/willyon/ds/icon/loading.gif" alt="请稍后..."/>
+    </div>
+    <div class="pic">
+      <ul class="">
+        <li><a href="#" class=""><img src="/home/willyon/ds/images/dizhuang/1.jpg" alt="底妆" text="详细描述1"/></a></li>
+        <li><a href="#" class=""><img src="/home/willyon/ds/images/dizhuang/2.jpg" alt="底妆" text="详细描述1"/></a></li>
+        <li><a href="#" class=""><img src="/home/willyon/ds/images/dizhuang/3.jpg" alt="底妆" text="详细描述1"/></a></li>
+        <li><a href="#" class=""><img src="/home/willyon/ds/images/dizhuang/4.jpg" alt="底妆" text="详细描述1"/></a></li>
+        <li><a href="#" class=""><img src="/home/willyon/ds/images/dizhuang/5.jpg" alt="底妆" text="详细描述1"/></a></li>
+        <li><a href="#" class=""><img src="/home/willyon/ds/images/dizhuang/6.jpg" alt="底妆" text="详细描述1"/></a></li>
+        <li><a href="#" class=""><img src="/home/willyon/ds/images/dizhuang/7.jpg" alt="底妆" text="详细描述1"/></a></li>
+        <li><a href="#" class=""><img src="/home/willyon/ds/images/dizhuang/8.jpg" alt="底妆" text="详细描述1"/></a></li>
+        <li><a href="#" class=""><img src="/home/willyon/ds/images/dizhuang/9.jpg" alt="底妆" text="详细描述1"/></a></li>
+        <li><a href="#" class=""><img src="/home/willyon/ds/images/dizhuang/0.jpg" alt="底妆" text="详细描述1"/></a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="makeupall" id="makeupBox6">
+    <div class="loading">
+      <img src="/home/willyon/ds/icon/loading.gif" alt="请稍后..."/>
+    </div>
+    <div class="pic">
+      <ul class="">
+        <li><a href="#" class=""><img src="/home/willyon/ds/images/chungao/1.jpg" alt="唇膏" text="详细描述1"/></a></li>
+        <li><a href="#" class=""><img src="/home/willyon/ds/images/chungao/2.jpg" alt="唇膏" text="详细描述1"/></a></li>
+        <li><a href="#" class=""><img src="/home/willyon/ds/images/chungao/3.jpg" alt="唇膏" text="详细描述1"/></a></li>
+        <li><a href="#" class=""><img src="/home/willyon/ds/images/chungao/4.jpg" alt="唇膏" text="详细描述1"/></a></li>
+        <li><a href="#" class=""><img src="/home/willyon/ds/images/chungao/5.jpg" alt="唇膏" text="详细描述1"/></a></li>
+        <li><a href="#" class=""><img src="/home/willyon/ds/images/chungao/6.jpg" alt="唇膏" text="详细描述1"/></a></li>
+        <li><a href="#" class=""><img src="/home/willyon/ds/images/chungao/7.jpg" alt="唇膏" text="详细描述1"/></a></li>
+        <li><a href="#" class=""><img src="/home/willyon/ds/images/chungao/8.jpg" alt="唇膏" text="详细描述1"/></a></li>
+        <li><a href="#" class=""><img src="/home/willyon/ds/images/chungao/9.jpg" alt="唇膏" text="详细描述1"/></a></li>
+        <li><a href="#" class=""><img src="/home/willyon/ds/images/chungao/0.jpg" alt="唇膏" text="详细描述1"/></a></li>
       </ul>
     </div>
   </div>
 </div>
-<div class="banner comWidth clearfix">
-  <div class="banner_bar banner_big">
-    <ul class="imgBox">
-      <li><a href="#"><img src="/home/willyon/ds/images/maintu.png" alt="banner"></a></li>
-      <li><a href="#"><img src="/home/willyon/ds/images/maintu.png" alt="banner"></a></li>
-    </ul>
-    <div class="imgNum">
-      <a href="#" class="active"></a>
-      <a href="#"></a>
-      <a href="#"></a>
-      <a href="#"></a>
-    </div>
-  </div>
-</div>
-<div class="shopTit comWidth">
-  <span class="icon"></span><h3>家用电脑</h3>
-  <a href="#" class="more">更多&gt;&gt;</a>
-</div>
-<div class="shopList comWidth clearfix">
- <div class="leftArea">
-  <div class="banner_bar banner_sm">
-    <ul class="imgBox">
-      <li><a href="#"><img src="/home/willyon/ds/images/beauty2.png" alt="banner"></a></li>
-      <li><a href="#"><img src="/home/willyon/ds/images/eat.png" alt="banner"></a></li>
-    </ul>
-    <div class="imgNum">
-      <a href="#" class="active"></a>
-      <a href="#"></a>
-      <a href="#"></a>
-      <a href="#"></a>
-    </div>
-  </div>
-
- </div>
- <div class="rightArea">
-   <div class="shopList_top clearfix">
-    <div class="shop_item">
-      <div class="shop_img">
-        <a href="#"><img src="/home/willyon/ds/images/phone3.png" alt="手机"/></a>
-      </div>
-      <h3>HTC新渴望8系列</h3>
-      <p>1899元</p>
-    </div>
-    <div class="shop_item">
-      <div class="shop_img">
-        <a href="#"><img src="/home/willyon/ds/images/phone3.png" alt="手机"/></a>
-      </div>
-      <h3>HTC新渴望8系列</h3>
-      <p>1899元</p>
-    </div>
-    <div class="shop_item">
-      <div class="shop_img">
-        <a href="#"><img src="/home/willyon/ds/images/phone3.png" alt="手机"/></a>
-      </div>
-      <h3>HTC新渴望8系列</h3>
-      <p>1899元</p>
-    </div>
-    <div class="shop_item">
-      <div class="shop_img">
-        <a href="#"><img src="/home/willyon/ds/images/phone3.png" alt="手机"/></a>
-      </div>
-      <h3>HTC新渴望8系列</h3>
-      <p>1899元</p>
-    </div>
-   </div>
-   <div class="shopList_sm clearfix">
-    <div class="shopItem_sm">
-      <div class="shopItem_smImg">
-        <a href="#"><img src="/home/willyon/ds/images/phone3.png" /></a>
-      </div>
-      <div class="shopItem_text">
-        <p>NFC技术一碰轻松配对！接触屏幕</p>
-        <h3>￥149.00</h3>
-      </div>
-    </div>
-    <div class="shopItem_sm">
-      <div class="shopItem_smImg">
-        <a href="#"><img src="/home/willyon/ds/images/phone3.png" /></a>
-      </div>
-      <div class="shopItem_text">
-        <p>NFC技术一碰轻松配对！接触屏幕</p>
-        <h3>￥149.00</h3>
-      </div>
-    </div>
-    <div class="shopItem_sm">
-      <div class="shopItem_smImg">
-        <a href="#"><img src="/home/willyon/ds/images/phone3.png" /></a>
-      </div>
-      <div class="shopItem_text">
-        <p>NFC技术一碰轻松配对！接触屏幕</p>
-        <h3>￥149.00</h3>
-      </div>
-    </div>
-    <div class="shopItem_sm">
-      <div class="shopItem_smImg">
-        <a href="#"><img src="/home/willyon/ds/images/phone3.png" /></a>
-      </div>
-      <div class="shopItem_text">
-        <p>NFC技术一碰轻松配对！接触屏幕</p>
-        <h3>￥149.00</h3>
-      </div>
-    </div>
-   </div>
- </div>
-</div>
-<div class="shopTit comWidth">
-  <span class="icon"></span><h3>家用电脑</h3>
-  <a href="#" class="more">更多&gt;&gt;</a>
-</div>
-<div class="shopList comWidth clearfix">
- <div class="leftArea">
-  <div class="banner_bar banner_sm">
-    <ul class="imgBox">
-      <li><a href="#"><img src="/home/willyon/ds/images/eat.png" alt="banner"></a></li>
-      <li><a href="#"><img src="/home/willyon/ds/images/beauty2.png" alt="banner"></a></li>
-    </ul>
-    <div class="imgNum">
-      <a href="#" class="active"></a>
-      <a href="#"></a>
-      <a href="#"></a>
-      <a href="#"></a>
-    </div>
-  </div>
-
- </div>
- <div class="rightArea">
-   <div class="shopList_top clearfix">
-    <div class="shop_item">
-      <div class="shop_img">
-        <a href="#"><img src="/home/willyon/ds/images/phone3.png" alt="手机"/></a>
-      </div>
-      <h3>HTC新渴望8系列</h3>
-      <p>1899元</p>
-    </div>
-    <div class="shop_item">
-      <div class="shop_img">
-        <a href="#"><img src="/home/willyon/ds/images/phone3.png" alt="手机"/></a>
-      </div>
-      <h3>HTC新渴望8系列</h3>
-      <p>1899元</p>
-    </div>
-    <div class="shop_item">
-      <div class="shop_img">
-        <a href="#"><img src="/home/willyon/ds/images/phone3.png" alt="手机"/></a>
-      </div>
-      <h3>HTC新渴望8系列</h3>
-      <p>1899元</p>
-    </div>
-    <div class="shop_item">
-      <div class="shop_img">
-        <a href="#"><img src="/home/willyon/ds/images/phone3.png" alt="手机"/></a>
-      </div>
-      <h3>HTC新渴望8系列</h3>
-      <p>1899元</p>
-    </div>
-   </div>
-   <div class="shopList_sm clearfix">
-    <div class="shopItem_sm">
-      <div class="shopItem_smImg">
-        <a href="#"><img src="/home/willyon/ds/images/phone3.png" /></a>
-      </div>
-      <div class="shopItem_text">
-        <p>NFC技术一碰轻松配对！接触屏幕</p>
-        <h3>￥149.00</h3>
-      </div>
-    </div>
-    <div class="shopItem_sm">
-      <div class="shopItem_smImg">
-        <a href="#"><img src="/home/willyon/ds/images/phone3.png" /></a>
-      </div>
-      <div class="shopItem_text">
-        <p>NFC技术一碰轻松配对！接触屏幕</p>
-        <h3>￥149.00</h3>
-      </div>
-    </div>
-    <div class="shopItem_sm">
-      <div class="shopItem_smImg">
-        <a href="#"><img src="/home/willyon/ds/images/phone3.png" /></a>
-      </div>
-      <div class="shopItem_text">
-        <p>NFC技术一碰轻松配对！接触屏幕</p>
-        <h3>￥149.00</h3>
-      </div>
-    </div>
-    <div class="shopItem_sm">
-      <div class="shopItem_smImg">
-        <a href="#"><img src="/home/willyon/ds/images/phone3.png" /></a>
-      </div>
-      <div class="shopItem_text">
-        <p>NFC技术一碰轻松配对！接触屏幕</p>
-        <h3>￥149.00</h3>
-      </div>
-    </div>
-   </div>
- </div>
-</div>
 <div class="footer">
-  <p><a href="#">慕课简介</a><strong>丨</strong><a href="#">慕课公告</a><strong>丨</strong><a href="#">招贤纳士</a><strong>丨</strong><a href="#">联系我们</a><strong>丨</strong>客服热线：400-675-1234</p>
-  <p>Copyright &#169 2006-2016慕课版权所有&nbsp;&nbsp;&nbsp;京ICP备09037834号&nbsp;&nbsp;&nbsp; 京ICP证B1034-8376号&nbsp;&nbsp;&nbsp;某公安局XX分局备案编号：123456789123</p>
+  <p class="gang"><a href="#">关于购购</a><a href="#">联系购购</a><a href="#">商家入驻</a><a href="#">购购社区</a><span class="phonenum">客服热线：133-xxx-1234</span></p>
+  <p>Copyright &#169 2016-2026购购版权所有&nbsp;&nbsp;&nbsp;京ICP备09037256号&nbsp;&nbsp;&nbsp; 京ICP证B1034-8352号&nbsp;&nbsp;&nbsp;广州市公安局番禺分局备案编号：123456789025</p>
   <p class="web">
-    <a href="#"><img src="/home/willyon/ds/images/footerLogo1.png" alt="logo"/></a>
-    <a href="#"><img src="/home/willyon/ds/images/footerLogo1.png" alt="logo"/></a>
-    <a href="#"><img src="/home/willyon/ds/images/footerLogo1.png" alt="logo"/></a>
-    <a href="#"><img src="/home/willyon/ds/images/footerLogo1.png" alt="logo"/></a>
+  <a href="#"><img src="/home/willyon/ds/images/footer/1.png" alt="logo"/></a>
+  <a href="#"><img src="/home/willyon/ds/images/footer/2.png" alt="logo"/></a>
+  <a href="#"><img src="/home/willyon/ds/images/footer/4.png" alt="logo"/></a>
   </p>
 </div>
 </body>
 </html>
-

@@ -1,10 +1,12 @@
-@charset "utf-8";
+@charset "utf-8";/*表示页面编码格式为utf-8*/
 /*css Document*/
 body,ul,ol,li,p,h1,h2,h3,h4,h5,h6,form,fieldset,table,td,img,div,dl,dt,dd,input{
-   margin:0;padding:0;
-}
+   margin:0;
+   padding:0;
+}/*为了清除一些浏览器的默认值*/
 body{
    font-size:12px;
+   behavior:url(/home/willyon/ds/style/csshover.htc);/*由于IE6不支持hover效果，所以要加上这个补丁文件以支持*/
 }
 img{
    border:none;
@@ -15,7 +17,7 @@ li{
 input,select,textarea{
    outline:none; /*围绕边框的外围线*/
    border:none;
-   background:none;
+   background:none;/*为了防止input框在IE浏览器中出现问题，背景颜色 none 掉后,在main.css另外设置*/
 }
 textarea{
    resize:none;/*该属性规定是否可由用户调整元素尺寸*/
@@ -25,13 +27,15 @@ a{
    color:#656565;
 }
 /*清除浮动*/
-.clearfix:after{  /*after为伪对象*/
+.clearfix:after{  /*after为伪元素*/
    content:"";
    display:block;
    clear:both;
 }
+/*清除浮动 for IE6～IE7*/
 .clearfix{
-   zoom:1;/*对象缩放属性,默认值为normal，用浮点数或百分比定义缩放比例，不允许负值*/
+   zoom:1;
+   /*height:1%;此句效果跟 zoom:1 效果一样*/
 }
 
 .fl{
